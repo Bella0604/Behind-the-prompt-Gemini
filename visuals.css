@@ -1,0 +1,105 @@
+/* Original Figma artwork: load this stylesheet after styles.css. */
+#app {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+body[data-theme] #app[data-page]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: var(--page-artwork);
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#app[data-page="1"] #main-content { padding-top: 0; }
+#app[data-page]:not([data-page="1"]) #main-content { padding-top: 32px; }
+#app[data-page] .scene-heading { margin-bottom: 24px; }
+.character-field { color: #b9b9b9; }
+.home-data-word {
+  position: absolute;
+  left: 25px;
+  top: 407px;
+  margin: 0;
+  color: #676767;
+  font-family: var(--font-mono);
+  font-size: 7px;
+  line-height: 7px;
+  white-space: pre;
+  pointer-events: none;
+}
+.chapter-particle {
+  position: absolute;
+  top: max(700px, calc(100% - 160px));
+  margin: 0;
+  z-index: -1;
+  width: 276px;
+  color: #bfc2c6;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  line-height: 7px;
+  white-space: pre;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.surface-shell {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+}
+.surface-shell > .card { position: relative; }
+.surface-paper {
+  position: absolute;
+  inset: -18px;
+  z-index: -1;
+  width: calc(100% + 36px);
+  height: calc(100% + 36px);
+  max-width: none;
+  pointer-events: none;
+}
+.surface-paper-offset {
+  inset: 11px auto auto 14px;
+  width: 100%;
+  height: 100%;
+}
+.card[data-grain="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-image: var(--card-grain);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+h3.card-heading {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+@media (max-width: 900px) {
+  body[data-theme] #app[data-page]::before {
+    background-size: auto 900px;
+  }
+  .surface-paper { inset: -10px; width: calc(100% + 20px); height: calc(100% + 20px); }
+  .surface-paper-offset { inset: 8px auto auto 8px; width: 100%; height: 100%; }
+  .chapter-particle { left: 20px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .character-field { animation: none; }
+}
+.chapter-particle[data-figma-node="141:3861"] { animation: kf_141_3861_opacity_0 6s linear, kf_141_3861_translate_0 6s linear; animation-iteration-count: infinite;  }
+@keyframes kf_141_3861_opacity_0 { 0% { animation-timing-function: ease-in-out; opacity: 0.46; } 50% { animation-timing-function: ease-in-out; opacity: 0.6; } 100% { opacity: 0.46; } } @keyframes kf_141_3861_translate_0 { 0% { animation-timing-function: ease-in-out; translate: 0px 0px; } 50% { animation-timing-function: ease-in-out; translate: 0px -7px; } 100% { translate: 0px 0px; } }
+.chapter-particle[data-figma-node="141:5518"] { animation: kf_141_5518_opacity_0 6s linear, kf_141_5518_translate_0 6s linear; animation-iteration-count: infinite;  }
+@keyframes kf_141_5518_opacity_0 { 0% { animation-timing-function: ease-in-out; opacity: 0.46; } 50% { animation-timing-function: ease-in-out; opacity: 0.6; } 100% { opacity: 0.46; } } @keyframes kf_141_5518_translate_0 { 0% { animation-timing-function: ease-in-out; translate: 0px 0px; } 50% { animation-timing-function: ease-in-out; translate: 0px -7px; } 100% { translate: 0px 0px; } }
+.chapter-particle[data-figma-node="141:7175"] { animation: kf_141_7175_opacity_0 6s linear, kf_141_7175_translate_0 6s linear; animation-iteration-count: infinite;  }
+@keyframes kf_141_7175_opacity_0 { 0% { animation-timing-function: ease-in-out; opacity: 0.46; } 50% { animation-timing-function: ease-in-out; opacity: 0.6; } 100% { opacity: 0.46; } } @keyframes kf_141_7175_translate_0 { 0% { animation-timing-function: ease-in-out; translate: 0px 0px; } 50% { animation-timing-function: ease-in-out; translate: 0px -7px; } 100% { translate: 0px 0px; } }
+.chapter-particle[data-figma-node="141:8832"] { animation: kf_141_8832_opacity_0 6s linear, kf_141_8832_translate_0 6s linear; animation-iteration-count: infinite;  }
+@keyframes kf_141_8832_opacity_0 { 0% { animation-timing-function: ease-in-out; opacity: 0.46; } 50% { animation-timing-function: ease-in-out; opacity: 0.6; } 100% { opacity: 0.46; } } @keyframes kf_141_8832_translate_0 { 0% { animation-timing-function: ease-in-out; translate: 0px 0px; } 50% { animation-timing-function: ease-in-out; translate: 0px -7px; } 100% { translate: 0px 0px; } }
+.chapter-particle[data-figma-node="141:2205"] { animation: kf_141_2205_opacity_0 6s linear, kf_141_2205_translate_0 6s linear; animation-iteration-count: infinite;  }
+@keyframes kf_141_2205_opacity_0 { 0% { animation-timing-function: ease-in-out; opacity: 0.27; } 50% { animation-timing-function: ease-in-out; opacity: 0.41; } 100% { opacity: 0.27; } } @keyframes kf_141_2205_translate_0 { 0% { animation-timing-function: ease-in-out; translate: 0px 0px; } 50% { animation-timing-function: ease-in-out; translate: 0px -7px; } 100% { translate: 0px 0px; } }
+@media (prefers-reduced-motion: reduce) { .chapter-particle { animation: none; } }
+

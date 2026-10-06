@@ -1,0 +1,7 @@
+{
+  "name": "behind-the-prompt-api",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20.12" },
+  "scripts": { "start": "node server.mjs", "test": "node --test server.test.mjs" }
+}
